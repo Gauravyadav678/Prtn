@@ -1,133 +1,106 @@
-
-*{
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Lato',sans-serif;
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+ .section-title h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 80px;
+  background-color: yellow;
+  border-radius: 25px;
+  
 }
 body
 {
-    background-image:repeating-linear-gradient(gray,blue,red,orange);
+    background: skyblue;
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-size: cover;
+    height: 50Vh;
 
-    position: relative;
     
 }
+.section-title {
+  margin: 3% 0;
+}
+.section-title p {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size: 20px;
+  background-color:red;
+}
+.single-team{
+  margin-top: 70px;
+  padding-bottom: 85px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow:5px 5px 15px #000;
+  column-gap: 50px;
+}
+.col-md-2{
+    margin-left: 30px;
+   height: 100Vh; 
+}
+.team-img{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  background-color: blueviolet;
+  align-items: center;
+  
+}
+.team-img img{
+  width: 100%;
+  height: 50%;
+  transition: .1s;
 
-.team-section{
-    
-    width: 100%;
 }
-.team-section .container{
-    width: 80%;
-    margin-left: 50px;
+.single-team:hover .team-img img {
+  transform: scale(1.1);
 }
-.team-section .container .row{
-    width: 80%;
-    margin: auto;
+.team-content {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all .4s;
+  background: tomato;
+  z-index:4;
 }
-
-
-
-.team-section .container .row .title h3{
-    text-align: center;
-    text-justify: auto;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-top: 100px;
+.single-team:hover .team-content{
+  height: 150px;
 }
-
-.team-section .container .row .title h1{
-    text-align: center;
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-top: 30px;
-    background-color:navajowhite;
-    color: mediumvioletred;
-    border-radius: 25px;
-    margin-left: 100px;
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all .5s;
 }
-.team-section .container .row .title:hover h1{
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    background-color: gainsboro;
+.single-team:hover .team-content{
+  background: #000;
 }
-.team-section .container .team-card .card img{
-    height: 30vh;
-    width: 30vh;
-    margin-top: 20px;
-    border-radius: 50%;
-    border:5px solid forestgreen;
-    margin-left: 15px;
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
 }
-
-.team-section .container .team-card{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 20px;
-    margin-top: 120px;
+.single-team:hover .team-info h3{
+  color: tomato;
 }
-.team-section .container .team-card .card{
-    width: 100%;
-    background-color:tomato;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px;
-    cursor: pointer;
+.team-info p {
+  margin-top: 15px;
+  color: #fff;
+  margin-bottom: 1px;
 }
-.team-section .container .team-card .card:hover{
-    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
-    background-color: grey;
+.single-team-text p{
+  margin-top: 5px;
 }
-.team-section .container .team-card .card .content{
-    width: 100%;
-    text-align: center;
-}
-.team-section .container .team-card .card .content h3{
-    font-size: 20px;
-    margin-top: 10px;
-    letter-spacing: 1.5px;
-    color: blueviolet;
-}
-.team-section .container .team-card .card .content h4{
-    font-size: 15px;
-    margin: 20px;
-    margin-top: 16px, 0px;
-    letter-spacing: 1.5px;
-    color:midnightblue
-}
-.team-section .container .team-card .card .content h5
-{
-    background-color:yellow;
-    margin-bottom: 20px;
-    
-}
-.team-section .container .team-card .card .content a{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    display: block;
-    block-size:auto;
-    border-radius: 50%;
-}
-.team-section .container .team-card .card .content a:hover{
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    background-color:red;
+.team-text {
+  color: #fff;
+  padding: 0 10px 5px;
 }
 
-@media screen and (max-width: 900px){
-    .team-section .container .team-card{
-
-    grid-template-columns: repeat(1,1fr);
-    }
-}
-@media screen and (max-width: 560px){
-    .team-section .container .team-card{
-
-    grid-template-columns:1fr;
-    }
-}
