@@ -14,11 +14,6 @@
 }
 body
 {
-    background: skyblue;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50Vh;
-
     
 }
 .section-title {
@@ -42,7 +37,7 @@ body
 }
 .col-md-2{
     margin-left: 30px;
-   height: 100Vh; 
+
 }
 .team-img{
   position: relative;
