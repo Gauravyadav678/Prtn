@@ -14,7 +14,7 @@
 }
 body
 {
-    
+ background-color: bisque;   
 }
 .section-title {
   margin: 3% 0;
@@ -87,15 +87,17 @@ body
   color: tomato;
 }
 .team-info p {
-  margin-top: 15px;
+  margin-top: 8px;
   color: #fff;
   margin-bottom: 1px;
 }
-.single-team-text p{
-  margin-top: 5px;
+.team-text p{
+  margin-top: 35px;
+  
 }
 .team-text {
   color: #fff;
-  padding: 0 10px 5px;
+  padding: 5px 5px 5px;
+  margin-top:10px;
 }
 
