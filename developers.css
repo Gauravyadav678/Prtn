@@ -36,7 +36,8 @@ body
   column-gap: 50px;
 }
 .col-md-2{
-    margin-left: 30px;
+  margin-left: 25px;
+    align-items: center;
 
 }
 .team-img{
